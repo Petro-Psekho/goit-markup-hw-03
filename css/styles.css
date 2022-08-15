@@ -1,0 +1,264 @@
+/* цвет абзацев      #757575
+   цвет заголовков  #212121
+   основной цвет (цвет ховера)  #2196F3 
+   
+   background nav #FFFFFF
+   background footer (hero) #2F303A
+   background first: #F5F5F5
+   background second #F5F4FA
+   */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --main-color: #2196f3;
+  --button-bgc: #f5f4fa;
+  --inverts-color: #ffffff;
+}
+
+body {
+  background-color: var(--inverts-color);
+  color: var(--primary-text-color);
+
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* site nav */
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  color: #000000;
+  text-decoration: none;
+
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo > span {
+  color: var(--main-color);
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--main-color);
+}
+
+.contact-nav .link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+}
+
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--main-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: var(--inverts-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  color: var(--inverts-color);
+  background-color: var(--main-color);
+  border-style: none;
+  cursor: pointer;
+
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+
+/* Our features */
+
+.featufes-title,
+.projects-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Our team */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.team-title-list {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.list .list-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.team p {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.list .text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.featufes .text {
+  color: var(--primary-text-color);
+}
+
+/* Portfolio */
+
+.portfolio .portfolio-title {
+  color: var(--title-text-color);
+}
+
+.button-list .link {
+  color: var(--title-text-color);
+  background-color: var(--button-bgc);
+  border-style: none;
+  cursor: pointer;
+
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.button-list .link:hover,
+.button-list .link:focus {
+  color: var(--inverts-color);
+  background-color: var(--main-color);
+}
+
+.portfolio-list {
+  list-style: none;
+}
+
+.portfolio-list a {
+  text-decoration: none;
+}
+
+.portfolio-list .list-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list .text {
+  color: var(--primary-text-color);
+
+  font-family: roboto;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* footer */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-logo {
+  color: var(--inverts-color);
+  text-decoration: none;
+
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.footer-logo > span {
+  color: var(--main-color);
+}
+
+.address-title .link {
+  color: var(--inverts-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address-title .contact {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address-title .contact:hover,
+.address-title .contact:focus {
+  color: var(--main-color);
+}
