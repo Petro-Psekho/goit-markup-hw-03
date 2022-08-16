@@ -17,7 +17,7 @@
 }
 
 * {
-  outline: 2px dotted grey;
+  outline: 1px dotted grey;
 }
 
 body {
@@ -32,19 +32,13 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-p {
   margin: 0;
   padding: 0;
 }
@@ -59,16 +53,17 @@ p {
   padding-right: 15px;
 }
 
+.main-header {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav {
   display: flex;
 }
 
-.site-nav .item {
+.site-nav .item:not(:last-child) {
   margin-right: 50px;
-}
-
-.site-nav .item:last-child {
-  margin-right: 0px;
 }
 
 .link {
@@ -76,9 +71,10 @@ p {
 }
 
 .logo {
+  margin-right: 93px;
+
   color: #000000;
   text-decoration: none;
-
   font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -90,8 +86,11 @@ p {
 }
 
 .site-nav .link {
-  color: var(--title-text-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -103,9 +102,17 @@ p {
   color: var(--main-color);
 }
 
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contact-nav .link {
   color: var(--primary-text-color);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1, 14;
@@ -124,6 +131,7 @@ p {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  border-top: 1px solid #ececec;
 }
 
 .hero-title {
@@ -194,6 +202,7 @@ p {
 /* Our team */
 
 .team {
+  padding-top: 94px;
   padding-bottom: 94px;
 
   background-color: #f5f4fa;
@@ -350,10 +359,6 @@ p {
   color: var(--main-color);
 }
 
-.address-title .item {
+.address-title .item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.address-title .item:last-child {
-  margin-bottom: 0px;
 }
