@@ -14,19 +14,10 @@
   --main-color: #2196f3;
   --button-bgc: #f5f4fa;
   --inverts-color: #ffffff;
+  --border-color: #ececec;
 }
 
-* {
-  outline: 1px dotted grey;
-}
-
-body {
-  background-color: var(--inverts-color);
-  color: var(--primary-text-color);
-
-  font-family: roboto, sans-serif;
-  letter-spacing: 0.03em;
-}
+/* UTILTTES */
 
 h1,
 h2,
@@ -47,6 +38,27 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+body {
+  background-color: var(--inverts-color);
+  color: var(--primary-text-color);
+
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* SITE NAV */
@@ -137,7 +149,7 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  border-top: 1px solid #ececec;
+  border-top: 1px solid var(--border-color);
 }
 
 .hero-title {
@@ -186,17 +198,12 @@ img {
   padding-bottom: 94px;
 }
 
-.features-title,
 .projects-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-}
-
-.features-title {
-  margin-bottom: 50px;
 }
 
 .features-list .text {
@@ -251,7 +258,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 
-  background-color: #f5f4fa;
+  background-color: var(--button-bgc);
 }
 
 .team-title {
@@ -314,28 +321,29 @@ img {
 /* PORTFOLIO */
 
 .portfolio {
-  border-top: 1px solid #ececec;
+  border-top: 1px solid var(--border-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.portfolio .portfolio-title {
-  margin-bottom: 50px;
-
-  color: var(--title-text-color);
-  text-align: center;
-}
-
 .button-list {
   display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-list .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .button-list .link {
-  color: var(--title-text-color);
-  background-color: var(--button-bgc);
+  padding: 6px 22px;
   border-style: none;
+  border-radius: 4px;
   cursor: pointer;
 
+  color: var(--title-text-color);
+  background-color: var(--button-bgc);
   font-family: roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -349,8 +357,31 @@ img {
   background-color: var(--main-color);
 }
 
+/* GRID */
+
 .portfolio-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list .item {
+  width: calc((100% - 60px) / 3);
+}
+
+.item-border {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-list .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio-list .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
 
 .portfolio-list a {
@@ -358,8 +389,9 @@ img {
 }
 
 .portfolio-list .list-title {
-  color: var(--title-text-color);
+  margin-bottom: 4px;
 
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -368,7 +400,6 @@ img {
 
 .portfolio-list .text {
   color: var(--primary-text-color);
-
   font-family: roboto;
   font-size: 16px;
   line-height: 1.88;
@@ -402,9 +433,6 @@ img {
 }
 
 .address-title .link {
-  /* display: block;
-  margin-bottom: 9px; */
-
   color: var(--inverts-color);
   font-style: normal;
   font-size: 14px;
