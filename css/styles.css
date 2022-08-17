@@ -311,10 +311,23 @@ img {
   margin-right: 30px;
 }
 
-/* Portfolio */
+/* PORTFOLIO */
+
+.portfolio {
+  border-top: 1px solid #ececec;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .portfolio .portfolio-title {
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
+  text-align: center;
+}
+
+.button-list {
+  display: flex;
 }
 
 .button-list .link {
