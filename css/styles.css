@@ -171,18 +171,31 @@ ul {
 
 /* Our features */
 
-.featufes {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.featufes-title,
+.features-title,
 .projects-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+.features-list .text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.features-list .list-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 /* What are we doing? */
@@ -195,7 +208,7 @@ ul {
   margin-bottom: 50px;
 }
 
-.list .list-title {
+.features-list .list-title {
   margin-bottom: 10px;
 }
 
@@ -218,7 +231,7 @@ ul {
   text-align: center;
 }
 
-.team-list {
+.team-list .item {
   padding-bottom: 30px;
 }
 
@@ -236,7 +249,7 @@ ul {
   text-align: center;
 }
 
-.list .list-title {
+.team-list .list-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -248,15 +261,6 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-
-.list .text {
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-.featufes .text {
-  color: var(--primary-text-color);
 }
 
 /* Portfolio */
