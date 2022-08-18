@@ -216,11 +216,6 @@ body {
 
 /* OUR FEATURES */
 
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .features-list .text {
   font-size: 14px;
   line-height: 1.7;
@@ -346,7 +341,8 @@ body {
 .button-list .link:focus {
   color: var(--inverts-color);
   background-color: var(--main-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* GRID */
